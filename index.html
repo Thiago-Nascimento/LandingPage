@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/8ea9353849.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header class="topo">
+        <nav class="menu">
+            <ul id="meusLinks">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Desafios</a></li>
+                <li><a href="#">Endereço</a></li>
+            </ul>
+            <a href="#" class="btnMenu" onclick="botaoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <!-- Fim do topo -->
+    <section class="banner">
+        <div class="content alinhando-abaixo">
+            <div class="banner-text">
+                <h1>Desenvolvimento de sistemas 2020</h1>
+                <p>SENAI <span>Informática</span></p>
+                <img src="img/mouse-down.png" alt="Desenho de Mouse amerelo com seta para baixo - ir para seção X">
+            </div>
+        </div>
+    </section>
+    <section class="sobre">
+        <div class="content">
+            <h2>Sobre os projetos</h2>
+            <article class="artigo-sobre">
+                <picture>
+                    <source media="(max-width: 1199px)" srcset="img/sobre-2.jpg">
+                    <img src="img/imagem-seção-sobre.jpg" alt="Homem exibindo um objeto para um grupo de pessoas.">
+                </picture>
+                <div class="artigo-text-sobre">
+                    <h3>Participantes</h3>
+                    <h3>mais de 80 alunos organizados em 16 grupos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum..</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="info">
+        <div class="content info-flex">
+            <div class="info-card">
+                <h4>Local</h4>
+                <p>São Paulo</p>
+            </div>
+            <div class="info-card">
+                <h4>Duração</h4>
+                <p>90 Dias</p>
+            </div>
+            <div class="info-card">
+                <h4>Desafios</h4>
+                <p>+30 desafios</p>
+            </div>
+        </div>
+    </section>
+    <section class="endereco">
+        <div class="content alinhamento-centro">
+            <div>
+                <h2>Endereço</h2>
+                <div class="end-text">
+                    <p>Alameda Barão de Limeira, 539<br>
+                    Santa Cecília, São Paulo - SP<br>
+                    CEP 01202-001
+                    </p>
+                    <img src="img/mapa.png" alt="Mapa">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="content alinhamento-centro">
+            <p>Copyright © 2020 - Escola Senai de Informática</p>
+        </div>
+    </footer>
+    <script>
+        function botaoDoMenu() {
+          var ulDoMenu = document.getElementById("meusLinks");
+          if (ulDoMenu.style.display === "flex") {
+            ulDoMenu.style.display = "none";
+          } else {
+            ulDoMenu.style.display = "flex";
+          }
+        }
+     </script>
+ </body>
+
+</html>
